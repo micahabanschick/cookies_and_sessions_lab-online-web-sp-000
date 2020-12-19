@@ -8,6 +8,7 @@ class ProductsController < ApplicationController
 
   def add
     # @product = Product.new
+    binding.pry
     cart << params[:product]
     render :index
   end
