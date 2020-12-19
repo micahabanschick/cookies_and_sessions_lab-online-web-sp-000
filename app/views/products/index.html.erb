@@ -1,8 +1,8 @@
 <h1>Create a Product</h1>
 
 <%= form_tag products_path(@product) %>
-  <%= label_tag :name, "Name" %>
-  <%= text_field_tag :name %><br>
+  <%= label_tag :'product[:name]', "Name" %>
+  <%= text_field_tag :'product[:name]' %><br>
 
   <%= submit_tag "add product" %>
 <% end %>
