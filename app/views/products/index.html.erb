@@ -1,7 +1,7 @@
 <h1>Create a Product</h1>
 
 <%= form_tag({controller: "products", action: "add", method: "post"}) %>
-  <%= label_tag :'product[:name]', "Name" %>
+  <label><%= "Name" %></label>
   <%= text_field_tag :'product[:name]' %><br>
 
   <%= submit_tag "add product" %>
